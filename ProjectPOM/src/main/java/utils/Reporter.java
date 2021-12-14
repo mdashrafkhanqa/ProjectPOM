@@ -25,9 +25,9 @@ public abstract class Reporter {
 		
 		if(status.toUpperCase().equals("PASS")){
 			test.log(LogStatus.PASS, desc+test.
-					addScreenCapture("C:/Users/tanga/eclipse-workspace/ProjectPOM/reports/images/"+snapNumber+".jpg"));
+					addScreenCapture("C:/Users/tanga/git/ProjectPOM/ProjectPOM/reports/images/"+snapNumber+".jpg"));
 		}else if(status.toUpperCase().equals("FAIL")){
-			test.log(LogStatus.FAIL, desc+test.addScreenCapture("C:/Users/tanga/eclipse-workspace/ProjectPOM/reports/images/"+snapNumber+".jpg"));
+			test.log(LogStatus.FAIL, desc+test.addScreenCapture("C:/Users/tanga/git/ProjectPOM/ProjectPOM/reports/images/"+snapNumber+".jpg"));
 		}else if(status.toUpperCase().equals("INFO")){
 			test.log(LogStatus.INFO, desc);
 		}

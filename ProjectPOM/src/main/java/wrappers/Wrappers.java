@@ -1,5 +1,6 @@
 package wrappers;
 
+
 public interface Wrappers {
 	
 	/**
@@ -76,8 +77,6 @@ public interface Wrappers {
 	 * @author Ashraf
 	 */
 	public void verifyTextContainsById(String id, String text);
-
-
 
 	/**
 	 * This method will click the element using id as locator

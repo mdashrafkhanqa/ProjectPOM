@@ -584,4 +584,5 @@ public class GenericWrappers extends Reporter implements Wrappers{
 		((JavascriptExecutor) driver).executeScript("arguments[0].scrollIntoView(true);", element);
 	}
 
+
 }

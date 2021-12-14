@@ -19,15 +19,18 @@ public class TestCase2 extends ProjectSpecificWrappers{
 	}
 
 	@Test(dataProvider="fetchData")
-	public void testCase1(String EM,String PW) {
+	public void testCase1(String EM,String PW) throws InterruptedException {
 		new HomePage(driver, test)
 		.clickSignin()
 		.enterEmail(EM)
 		.enterPassword(PW)
 		.clickSignin()
 		.mouseOverWomenClickTshirt()
-		;
-		
+		.scrollFadedTshirtClickAddCart()
+		.verifyProductAndCheckout()
+		.proceedCheckout()
+		.checkTermsAndCheckout()
+		.clickSignout();
 	}
 
 }
