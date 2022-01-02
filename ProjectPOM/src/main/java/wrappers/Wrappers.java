@@ -37,7 +37,6 @@ public interface Wrappers {
 	 */
 	public void enterByXpath(String xpathValue, String data);
 
-
 	/**
 	 * This method will verify the title of the browser 
 	 * @param title - The expected title of the browser
@@ -161,7 +160,7 @@ public interface Wrappers {
 	 */
 	public void acceptAlert();
 	
-		/**
+	/**
 	 * This method will close all the browsers
 	 * @author Ashraf
 	 */
